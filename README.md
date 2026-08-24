@@ -31,11 +31,11 @@ Python (numpy, scipy, pandas) · Excel (OLS engine +
 OLS, HAC SE, Hill Saturation, Van Westendorp
 
 ## files
+```text
 prism-streaming-analytics/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-│
 ├── data/
 │   ├── raw/
 │   │   ├── subscriptions_historical.csv
@@ -44,7 +44,6 @@ prism-streaming-analytics/
 │   └── processed/
 │       ├── mmm_adstocked_data.csv
 │       └── elasticity_panel_data.csv
-│
 ├── models/
 │   ├── mmm/
 │   │   ├── __init__.py
@@ -52,7 +51,6 @@ prism-streaming-analytics/
 │   │   ├── hill_saturation.py     # Curvas de saturação de Hill
 │   │   ├── ols_hac.py              # Regressão OLS com erro padrão robusto (HAC / Newey-West)
 │   │   └── evaluate.py             # Validação fora da amostra (R² = 0.9742, MAPE = 1.14%)
-│   │
 │   └── pricing_v2/
 │       ├── __init__.py
 │       ├── log_log_elasticity.py   # Regressão log-log de elasticidade-preço por pacote
@@ -61,23 +59,20 @@ prism-streaming-analytics/
 │       ├── van_westendorp.py       # Análise de WTP (Willingness-to-Pay) por segmento
 │       ├── seasonal_optimizer.py   # Otimizador de timing sazonal (ranking de 12 meses)
 │       └── bundle_simulator.py     # Simulação de receitas e design de pacotes
-│
 ├── notebooks/
 │   ├── 01_mmm_media_channel_decomposition.ipynb
 │   ├── 02_prism_v2_price_elasticity_modelling.ipynb
 │   ├── 03_van_westendorp_wtp_analysis.ipynb
 │   └── 04_seasonal_timing_revenue_simulation.ipynb
-│
 ├── excel/
 │   └── PRISM_v2_Pricing_Model_ClaroTVPlus.xlsx  # Motor OLS em Excel com 539 fórmulas vinculadas nas 10 abas
-│
 ├── presentation/
 │   └── PRISM_v2_CMO_EN_final.pptx               # Deck executivo com os insights de pricing para o CMO
-│
 └── utils/
     ├── __init__.py
     ├── metrics.py
     └── visualization.py            # Plotagem de decomposição de canais e curvas WTP
+```
 
 ## Key results
 | Metric | Value |
